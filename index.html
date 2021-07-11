@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/picture/favicon_io/favicon-32x32.png" type="image/x-icon">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Third Party Libraries -->
+  <!-- Leaflet JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script defer src="app.js"> </script>
+  <title>Ecycle</title>
+</head>
+
+<body>
+  <div class="header_up">
+    <div class="phone">
+      <h1>Call Us:&nbsp;&nbsp;987654321&nbsp;&nbsp;|&nbsp;&nbsp;Hours of Operation: 8:00 am - 5:00 pm (Mon - Fri)</h1>
+    </div>
+    <div class="social_handles">
+      <a href="#facebook" class="fa fa-facebook fa-lg" target="_blank"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#twitter"
+        class="fa fa-twitter fa-lg" target="_blank"></a>
+      &nbsp; &nbsp;&nbsp;&nbsp;<a href="#instagram" class="fa fa-instagram fa-lg" target="_blank"></a>
+    </div>
+  </div>
+  <nav>
+    <div class="logo">
+    </div>
+    <ul class="nav_items">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">BOOK</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">CONTACT US</a></li>
+      <span>
+        <li><a href="#">LOGIN/REGISTER</a></li>
+      </span>
+      <li class="socialhandles_small">
+        <div class="phone">
+          <h1>Call Us:&nbsp;&nbsp;987654321&nbsp;&nbsp;|&nbsp;&nbsp;Hours of Operation:<br> 8:00 am - 5:00 pm (Mon -
+            Fri)</h1>
+        </div>
+        <div class="social_handles">
+          <a href="#facebook" class="fa fa-facebook fa-lg" target="_blank"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="#twitter" class="fa fa-twitter fa-lg" target="_blank"></a>
+          &nbsp; &nbsp;&nbsp;&nbsp;<a href="#instagram" class="fa fa-instagram fa-lg" target="_blank"></a>
+        </div>
+      </li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <div class="location__container">
+    <button class="find__me--btn" id="find__me--btn">Find Me</button>
+    <div id="map"></div>
+  </div>
+
+
+  <div class="whole">
+    <div class="title1"><br>
+      Why choose our Bike ?<br>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="c2">
+          <img class="topimage" src="picture/top image.jpg">
+        </div>
+      </div>
+      <div class="column1">
+        <div class="c1">
+          <div>
+            <div>
+              <img class="i" src="picture/bike icon.png" width="100" height="100">
+            </div>
+            <div>
+              <p class="h1"> Different Variety of Bicycles </p>
+              <p>We can fit you with the perfect bike because we carry all sizes and
+                of bikes.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img class="i" src="picture/maintain 3.jfif" width="100" height="100">
+            </div>
+            <div>
+              <p class="h1">Regular Maintenance </p>
+              <p>We sanitize our bicycles regularly. We daily keep check of their parts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column2">
+        <div>
+          <div>
+            <img class="i" src="picture/timing.png" width="100" height="100">
+          </div>
+          <div>
+            <p> 24 × 7 Availability </p>
+            <p>You can book our e-bicyle anytime.
+              No need to worry about that.</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img class="i" src="picture/economical.jpg" width="100" height="100">
+          </div>
+          <div>
+            <p class="h1"> Economical </p>
+            <p>We provide best bicycles in range. It don't cost you more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <section>
+        <div class="section-title">
+          <img class="image1" src="picture/cyclist vector.jpg" width="100" height="200">
+          <h2>Things to do </h2>
+          <h6 class="hd6">Wake up and ride at your own pace.
+            Let the chalk arrows lead the way.
+            Taste Local Culture.</h6>
+        </div>
+        <div class="rightcontent">
+          <div>
+            <img class="image" src="picture/cc.jpg" width="100" height="200">
+            <h2>Computer Centre </h2>
+            <p class="p">A praceat craqdolorum consectetur error maxime? Sapiente, eius. Voluptates officia
+              consectetur
+              nihil, placeat ea
+              e atque nulla rem perferendisariatur hic.</p>
+            <img class="image" src="picture/localmarket.jpg" width="100" height="200">
+            <h2>Jaipur local Markets</h2>
+            <p class="p"> co magapiente, eius. Voluptates officia consectetur nihil, placeat ea
+              nulla rem perferendis omnis eveniet tempore error! Ducimus fuga pariatur hic.</p>
+            <img class="image" src="picture/night out.jpg" width="100" height="200">
+            <h2>Night-out stuffs</h2>
+            <p class="p">mniofficia consectat ea
+              porrn ea culpa iure ut tenetur illo recusandae atque nulla rem perferendis omnis eveniet tempore error!
+              Ducimus fuga pariatur hic.</p>
+          </div>
+          <div>
+            <img class="image" src="picture/library.jpg" width="100" height="200">
+            <h2>Libarary </h2>
+            <p class="p">Pluptate pe aliquam sunt facilis iusto
+              earum error in, optioipit architecto, sunt fuga maxime temporibus cumque atque consequuntur, soluta
+              aliquid in officia?</p>
+            <img class="image" src="picture/random fun with frnd.jfif" width="100" height="200">
+            <h2>Random fun with friends</h2>
+            <p class="p">A pr ma ae officiis ab quibusdam in earum cupiditate culpa iure ut tenetur illo recusandae
+              atque nulla rem perferendis omnis eveniet tempore error! Ducimus fuga pariatur hic.</p>
+            <img class="image" src="picture/wtp-gt.jpeg" width="100" height="200">
+            <h2>Malls and restaurent </h2>
+            <p class="p">A provideaque tempore nemo ab officia minus nihil omnis, magnam dolorum consectetur error
+              maxime? Sapiente, eius. Voluptates officia consectetur nihil, placeat ea
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- <div class="video">
+      <video autoplay muted loop>
+        <source src="/video/Fast & Furious 9 – Official Trailer (Universal Pictures) HD.mp4" type="video/mp4">
+      </video>
+    </div> -->
+
+  </div>
+
+  <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="/images/eCycle1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/images/eCycle2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="/images/eCycle6.jpg" alt=""></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  <footer>
+    Made with ❤️ in India.
+  </footer>
+</body>
+
+</html>
